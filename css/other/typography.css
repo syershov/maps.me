@@ -1,0 +1,59 @@
+.h {
+
+}
+.h1, h1 {
+    font: 900 36px 'Roboto';
+    line-height: 1.33;
+    color: #232e33;
+}
+.h2, h2 {
+    font: 900 24px 'Roboto';
+    line-height: 1.33;
+    color: #323c47;
+}
+.h3, h3 {
+    font: 500 16px 'Roboto';
+    line-height: 1.5;
+    color: #232e33;
+}
+.h4, h4 {
+    font: 500 16px 'Roboto';
+    line-height: 1.5;
+    color: #5c6366;
+}
+
+.paragraph, p {
+    font: 14px 'Roboto';
+    line-height: 1.71;
+    color: #232e33;
+}
+
+.caption {
+    font: 12px 'Roboto';
+    line-height: 1.67;
+    color: #5c6266;
+}
+
+a, .link {
+    font: 14px 'Roboto';
+    line-height: 1.71;
+    color: #4da6ff;
+    text-decoration: none;
+}
+
+a:hover, .link:hover, .link_hover {
+    color: #4595e6;
+    text-decoration: underline;
+}
+
+.error {
+    font: 12px 'Roboto';
+    line-height: 1.67;
+    color: #de4537;
+}
+
+.hint {
+    font: 14px 'Roboto';
+    line-height: 1.71;
+    color: #b8c6cc;
+}

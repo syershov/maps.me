@@ -1,0 +1,118 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Please, enter a code</title>
+    <meta name="author" content="rostixman">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/vendor/normalize.min.css">
+    <link rel="stylesheet" href="css/other/typography.css">
+    <link rel="stylesheet" href="css/other/atom.css">
+    <link rel="stylesheet" href="css/blocks/*.css">
+    <link rel="stylesheet" href="css/blocks/app.css">
+    <link rel="stylesheet" href="css/blocks/body.css">
+    <link rel="stylesheet" href="css/blocks/button.css">
+    <link rel="stylesheet" href="css/blocks/field-text.css">
+    <link rel="stylesheet" href="css/blocks/footer.css">
+    <link rel="stylesheet" href="css/blocks/header.css">
+    <link rel="stylesheet" href="css/blocks/html.css">
+    <link rel="stylesheet" href="css/blocks/icon.css">
+    <link rel="stylesheet" href="css/blocks/logo.css">
+    <link rel="stylesheet" href="css/blocks/menu.css">
+    <link rel="stylesheet" href="css/blocks/mobile-menu.css">
+    <link rel="stylesheet" href="css/blocks/tile.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <div class="header">
+            <div class="logo">
+                MAPS.ME <span class="logo__blue">Business</span>
+            </div>
+
+            <div class="mobile-menu">
+                <a href="#" class="mobile-menu__open">
+                    <i class="icon icon_24 icon_menu"></i>
+                </a>
+
+                <div class="mobile-menu__list">
+                    <a href="#" class="mobile-menu__close">
+                        <i class="icon icon_24 icon_close"></i>
+                    </a>
+                    <a href="#" class="mobile-menu__item">Help</a>
+                    <a href="#" class="mobile-menu__item">Privacy Policy</a>
+                    <a href="#" class="mobile-menu__item">Support</a>
+                    <span class="mobile-menu__item">
+                        <select name="language">
+                            <option value="en">English</option>
+                            <option value="ru">Русский</option>
+                        </select>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <form action="/" method="post" class="tile tile_page_phone">
+                <div class="h h2 mb20">Please, enter a code</div>
+                <div class="paragraph">We will send a verification code to your phone number<br>+7 (925) 467-51-24</div>
+
+                <!--
+                    success:
+                        add class 'field-text_success'
+                    error:
+                        add class 'field-text_error'
+                    disabled:
+                        add class 'field-text_disabled' and 'disabled' prop to input
+                -->
+
+                <div class="field-text field-text_with_icon mt10">
+                    <div class="field-text__cloud">
+                        Incorrect a verification code, try again
+
+                        <div class="field-text__cloud-arrow"></div>
+                    </div>
+                    <div class="field-text__input-wrap">
+                        <input type="text" class="field-text__input" maxlength="6" value="" placeholder="eg. 123456">
+                    </div>
+                    <div class="field-text__icon">
+
+                    </div>
+                </div>
+
+                <button type="submit" class="button button_submit button_full button_blue mt40" disabled="disabled">Submit</button>
+            </form>
+        </div>
+
+        <div class="app__pull"></div>
+    </div>
+
+    <div class="footer">
+        <div class="footer__copyright">© 2017 MAPS.ME</div>
+        <div class="footer__menu">
+            <div class="menu menu_footer">
+                <a href="#" class="menu__item">Help</a>
+                <a href="#" class="menu__item">Privacy Policy</a>
+                <a href="#" class="menu__item">Support</a>
+                <span class="menu__item">
+                    <select name="language">
+                        <option value="en">English</option>
+                        <option value="ru">Русский</option>
+                    </select>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/vendor/jquery.documentReady.js"></script>
+    <script src="js/other/functions.js"></script>
+    <script src="js/blocks/field-text.js"></script>
+    <script src="js/blocks/mobile-menu.js"></script>
+</body>
+</html>

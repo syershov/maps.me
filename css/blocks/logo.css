@@ -1,0 +1,13 @@
+.logo {
+    letter-spacing: 0.9px; /* change to 1 if not support*/
+    font: 24px 'Roboto', arial;
+    color: #374657;
+    display: inline-block;
+    vertical-align: top;
+    width: 227px;
+}
+
+.logo__blue {
+    font-weight: bold;
+    color: #1e96f0;
+}

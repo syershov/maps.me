@@ -1,0 +1,154 @@
+/* default button*/
+.button {
+    border-radius: 8px;
+    background-color: #ffffff;
+    border: solid 1px #a1adb3;
+    padding: 11px 10px;
+    display: inline-block;
+    vertical-align: top;
+
+    /* text */
+    font: bold 14px 'Roboto';
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #a1adb3;
+    text-transform: uppercase;
+
+    -webkit-transition: background-color 0.2s;
+    -moz-transition: background-color 0.2s;
+    -ms-transition: background-color 0.2s;
+    -o-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+}
+
+.button:hover,
+.button_hover {
+    background-color: #f5f9fa;
+    color: #a1adb3;
+    text-decoration: none;
+}
+
+.button:focus,
+.button_focus {
+    background-color: #e7edf0;
+}
+
+.button[disabled],
+.button[disabled="disabled"],
+.button_disabled {
+    opacity: 0.4;
+    background-color: #ffffff!important;
+    cursor: default;
+    pointer-events: none;
+}
+/* default button */
+
+
+/* green button */
+.button_green {
+    background-color: #58cc1f;
+    border: none;
+    color: #ffffff;
+    padding: 12px 10px;
+}
+
+.button_green:hover,
+.button_green.button_hover {
+    background-color: #7ede4d;
+    color: #ffffff;
+}
+
+.button_green:focus,
+.button_green.button_focus {
+    background-color: #4db31a;
+}
+
+.button_green[disabled],
+.button_green[disabled="disabled"],
+.button_green.button_disabled {
+    opacity: 0.4;
+    background-color: #7ebd2a!important;
+    cursor: default;
+    pointer-events: none;
+}
+/* green button */
+
+
+/* blue button */
+.button_blue {
+    background-color: #4da6ff;
+    border: none;
+    color: #ffffff;
+    padding: 12px 10px;
+}
+
+.button_blue:hover,
+.button_blue.button_hover {
+    background-color: #73b9ff;
+    color: #ffffff;
+}
+
+.button_blue:focus,
+.button_blue.button_focus {
+    background-color: #4595e6;
+}
+
+.button_blue[disabled],
+.button_blue[disabled="disabled"],
+.button_blue.button_disabled {
+    opacity: 0.4;
+    background-color: #4da6ff!important;
+    cursor: default;
+    pointer-events: none;
+}
+/* green button */
+
+/* button facebook */
+.button_facebook {
+    background-color: #3a5ba0;
+    border: none;
+    color: #ffffff;
+    padding: 12px 10px;
+}
+
+.button_facebook:hover,
+.button_facebook.button_hover {
+    background-color: #5575ba;
+    color: #ffffff;
+}
+
+.button_facebook:focus,
+.button_facebook.button_focus {
+    background-color: #4595e6;
+}
+
+.button_facebook[disabled],
+.button_facebook[disabled="disabled"],
+.button_facebook.button_disabled {
+    opacity: 0.4;
+    background-color: #3a5ba0!important;
+    cursor: default;
+    pointer-events: none;
+}
+/* button facebook */
+
+/* button with icon */
+.button_with_icon {
+    text-transform: none;
+    position: relative;
+    font: 500 14px 'Roboto';
+    padding-left: 48px;
+    padding-right: 48px;
+}
+
+.button_with_icon .icon {
+    position: absolute;
+    top: 7px;
+    left: 8px;
+}
+
+/* modifiers */
+.button_full {
+    width: 100%;
+}
+/* modifiers */

@@ -1,0 +1,140 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+
+    <title>Enter phone number</title>
+    <meta name="author" content="rostixman">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/vendor/normalize.min.css">
+    <link rel="stylesheet" href="css/vendor/flags.min.css">
+    <link rel="stylesheet" href="css/other/typography.css">
+    <link rel="stylesheet" href="css/other/atom.css">
+    <link rel="stylesheet" href="css/blocks/*.css">
+    <link rel="stylesheet" href="css/blocks/app.css">
+    <link rel="stylesheet" href="css/blocks/body.css">
+    <link rel="stylesheet" href="css/blocks/button.css">
+    <link rel="stylesheet" href="css/blocks/country-row.css">
+    <link rel="stylesheet" href="css/blocks/flags.css">
+    <link rel="stylesheet" href="css/blocks/footer.css">
+    <link rel="stylesheet" href="css/blocks/header.css">
+    <link rel="stylesheet" href="css/blocks/html.css">
+    <link rel="stylesheet" href="css/blocks/icon.css">
+    <link rel="stylesheet" href="css/blocks/logo.css">
+    <link rel="stylesheet" href="css/blocks/menu.css">
+    <link rel="stylesheet" href="css/blocks/mobile-menu.css">
+    <link rel="stylesheet" href="css/blocks/phone-country.css">
+    <link rel="stylesheet" href="css/blocks/tile.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <div class="header">
+            <div class="logo">
+                MAPS.ME <span class="logo__blue">Business</span>
+            </div>
+
+            <div class="mobile-menu">
+                <a href="#" class="mobile-menu__open">
+                    <i class="icon icon_24 icon_menu"></i>
+                </a>
+
+                <div class="mobile-menu__list">
+                    <a href="#" class="mobile-menu__close">
+                        <i class="icon icon_24 icon_close"></i>
+                    </a>
+                    <a href="#" class="mobile-menu__item">Help</a>
+                    <a href="#" class="mobile-menu__item">Privacy Policy</a>
+                    <a href="#" class="mobile-menu__item">Support</a>
+                    <span class="mobile-menu__item">
+                        <select name="language">
+                            <option value="en">English</option>
+                            <option value="ru">Русский</option>
+                        </select>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <form action="/" method="post" class="tile tile_page_phone">
+                <div class="h h2 mb20">Please, enter your mobile phone number</div>
+                <div class="paragraph">We will send a verification code to your phone number</div>
+
+                <!--
+                    error:
+                        add class 'phone-country_error'
+                    disabled:
+                        add class 'phone-country_disabled' and 'disabled' prop to input
+                -->
+                <div class="phone-country mt10" data-cc="RU">
+                    <div class="phone-country__cloud">
+                        Invalid a phone number, try again
+
+                        <div class="phone-country__cloud-arrow"></div>
+                    </div>
+                    <div class="phone-country__select">
+                        <div class="flags">
+                            <div class="flags__current">
+                                <img src="img/blank.gif" class=""/>
+                                <div class="flags__arrow"></div>
+                            </div>
+                            <div class="flags__list-wrapper">
+                                <div class="flags__list">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="phone-country__input">
+                        <input type="tel" class="country-mask" pattern="\d*">
+                    </div>
+
+                    <div class="phone-country__icon">
+                        <i class="icon icon_16 icon_check_empty"></i>
+                    </div>
+                </div>
+
+                <button type="submit" class="button button_submit button_full button_blue mt40" disabled="disabled">Send code</button>
+                
+                <p class="mt30">By signing up, I accept <a href="">Privacy Policy</a></p>
+
+                <input type="hidden" id="phone_number_0" name="phone_number_0">
+                <input type="hidden" id="phone_number_1" name="phone_number_1">
+            </form>
+        </div>
+
+        <div class="app__pull"></div>
+    </div>
+
+    <div class="footer">
+        <div class="footer__copyright">© 2017 MAPS.ME</div>
+        <div class="footer__menu">
+            <div class="menu menu_footer">
+                <a href="#" class="menu__item">Help</a>
+                <a href="#" class="menu__item">Privacy Policy</a>
+                <a href="#" class="menu__item">Support</a>
+                <span class="menu__item">
+                    <select name="language">
+                        <option value="en">English</option>
+                        <option value="ru">Русский</option>
+                    </select>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/vendor/jquery-2.2.4.min.js"></script>
+    <script src="js/vendor/jquery.mask.min.js"></script>
+    <script src="js/blocks/phone-country.js"></script>
+
+    <script src="js/other/functions.js"></script>
+    <script src="js/blocks/mobile-menu.js"></script>
+</body>
+</html>
