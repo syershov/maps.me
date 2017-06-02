@@ -4,33 +4,44 @@
 <head>
     <meta charset="utf-8">
 
-
     <title>Enter phone number</title>
     <meta name="author" content="rostixman">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <!-- General styles for all pages::[START] -->
+    <!-- vendor -->
     <link rel="stylesheet" href="css/vendor/normalize.min.css">
-    <link rel="stylesheet" href="css/vendor/flags.min.css">
-    <link rel="stylesheet" href="css/other/typography.css">
+    <!-- other -->
     <link rel="stylesheet" href="css/other/atom.css">
-    <link rel="stylesheet" href="css/blocks/*.css">
-    <link rel="stylesheet" href="css/blocks/app.css">
-    <link rel="stylesheet" href="css/blocks/body.css">
-    <link rel="stylesheet" href="css/blocks/button.css">
-    <link rel="stylesheet" href="css/blocks/country-row.css">
-    <link rel="stylesheet" href="css/blocks/flags.css">
-    <link rel="stylesheet" href="css/blocks/footer.css">
-    <link rel="stylesheet" href="css/blocks/header.css">
+    <!-- blocks -->
+    <link rel="stylesheet" href="css/blocks/all.css">
     <link rel="stylesheet" href="css/blocks/html.css">
-    <link rel="stylesheet" href="css/blocks/icon.css">
+    <link rel="stylesheet" href="css/blocks/body.css">
+    <link rel="stylesheet" href="css/blocks/app.css">
+    <link rel="stylesheet" href="css/blocks/header.css">
     <link rel="stylesheet" href="css/blocks/logo.css">
-    <link rel="stylesheet" href="css/blocks/menu.css">
     <link rel="stylesheet" href="css/blocks/mobile-menu.css">
+    <link rel="stylesheet" href="css/blocks/footer.css">
+    <link rel="stylesheet" href="css/blocks/menu.css">
+    <!-- General styles for all pages::[END] -->
+
+    <!-- Only for this page::[START] -->
+    <!-- other -->
+    <link rel="stylesheet" href="css/other/typography/typography_total.css">
+    <!-- vendor -->
+    <link rel="stylesheet" href="css/vendor/flags.min.css">
+    <!-- blocks -->
+    <link rel="stylesheet" href="css/blocks/button/button.css">
+    <link rel="stylesheet" href="css/blocks/button/button_blue.css">
+    <link rel="stylesheet" href="css/blocks/flags.css">
+    <link rel="stylesheet" href="css/blocks/country-row.css">
     <link rel="stylesheet" href="css/blocks/phone-country.css">
+    <link rel="stylesheet" href="css/blocks/icon.css">
     <link rel="stylesheet" href="css/blocks/tile.css">
+    <!-- Only for this page::[END] -->
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
 
-    <!-- favicons -->
     <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
@@ -149,11 +160,17 @@
         </div>
     </div>
 
-    <script src="js/vendor/jquery-2.2.4.min.js"></script>
+    <!-- vendor -->
+    <script src="js/vendor/zepto.min.js"></script>
     <script src="js/vendor/jquery.mask.min.js"></script>
+    <!-- other -->
+    <script src="js/other/utils.js"></script>
+    <!-- blocks -->
     <script src="js/blocks/phone-country.js"></script>
-
-    <script src="js/other/functions.js"></script>
     <script src="js/blocks/mobile-menu.js"></script>
+    <!-- page -->
+    <script src="js/pages/passport-phone.js"></script>
+
+
 </body>
 </html>

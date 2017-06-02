@@ -1,4 +1,4 @@
-$(function(){
+var fieldTextInit = function () {
     var textField = document.querySelector('.field-text'),
         textFieldFocusClass = 'field-text_focus',
         textFieldSuccessClass = 'field-text_success';
@@ -30,4 +30,4 @@ $(function(){
         }
     });
     /* check maxLength */
-});
+}

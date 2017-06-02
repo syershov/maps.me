@@ -7,25 +7,38 @@
     <title>Sign in</title>
     <meta name="author" content="rostixman">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <!-- General styles for all pages::[START] -->
+    <!-- vendor -->
     <link rel="stylesheet" href="css/vendor/normalize.min.css">
-    <link rel="stylesheet" href="css/other/typography.css">
+    <!-- other -->
     <link rel="stylesheet" href="css/other/atom.css">
-    <link rel="stylesheet" href="css/blocks/*.css">
-    <link rel="stylesheet" href="css/blocks/app.css">
-    <link rel="stylesheet" href="css/blocks/body.css">
-    <link rel="stylesheet" href="css/blocks/button.css">
-    <link rel="stylesheet" href="css/blocks/footer.css">
-    <link rel="stylesheet" href="css/blocks/header.css">
+    <!-- blocks -->
+    <link rel="stylesheet" href="css/blocks/all.css">
     <link rel="stylesheet" href="css/blocks/html.css">
-    <link rel="stylesheet" href="css/blocks/icon.css">
+    <link rel="stylesheet" href="css/blocks/body.css">
+    <link rel="stylesheet" href="css/blocks/app.css">
+    <link rel="stylesheet" href="css/blocks/header.css">
     <link rel="stylesheet" href="css/blocks/logo.css">
-    <link rel="stylesheet" href="css/blocks/menu.css">
     <link rel="stylesheet" href="css/blocks/mobile-menu.css">
+    <link rel="stylesheet" href="css/blocks/footer.css">
+    <link rel="stylesheet" href="css/blocks/menu.css">
+    <!-- General styles for all pages::[END] -->
+
+    <!-- Only for this page::[START] -->
+    <!-- other -->
+    <link rel="stylesheet" href="css/other/typography/h/h2.css">
+    <link rel="stylesheet" href="css/other/typography/a.css">
+    <!-- blocks -->
+    <link rel="stylesheet" href="css/blocks/button/button.css">
+    <link rel="stylesheet" href="css/blocks/button/button_with_icon.css">
+    <link rel="stylesheet" href="css/blocks/button/button_facebook.css">
     <link rel="stylesheet" href="css/blocks/tile.css">
+    <link rel="stylesheet" href="css/blocks/icon.css">
+    <!-- Only for this page::[END] -->
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
 
-    <!-- favicons -->
     <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
@@ -116,7 +129,8 @@
     </div>
 
     <script src="js/vendor/jquery.documentReady.js"></script>
-    <script src="js/other/functions.js"></script>
+    <script src="js/other/utils.js"></script>
     <script src="js/blocks/mobile-menu.js"></script>
+    <script src="js/pages/passport-sign-in.js"></script>
 </body>
 </html>

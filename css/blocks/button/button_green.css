@@ -1,0 +1,28 @@
+/* green button */
+.button_green {
+    background-color: #58cc1f;
+    border: none;
+    color: #ffffff;
+    padding: 12px 10px;
+}
+
+.button_green:hover,
+.button_green.button_hover {
+    background-color: #7ede4d;
+    color: #ffffff;
+}
+
+.button_green:focus,
+.button_green.button_focus {
+    background-color: #4db31a;
+}
+
+.button_green[disabled],
+.button_green[disabled="disabled"],
+.button_green.button_disabled {
+    opacity: 0.4;
+    background-color: #7ebd2a!important;
+    cursor: default;
+    pointer-events: none;
+}
+/* green button */

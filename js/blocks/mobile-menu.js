@@ -1,4 +1,4 @@
-$(function(){
+var mobileMenuInit = function() {
     var mobileMenu = document.querySelector('.mobile-menu'),
         mobileMenuBtnOpen = document.querySelector('.mobile-menu__open'),
         mobileMenuBtnClose = document.querySelector('.mobile-menu__close'),
@@ -12,4 +12,4 @@ $(function(){
         removeClass(mobileMenu, mobileMenuOpenClass)
     }, true);
     /* focus, blur */
-});
+}

@@ -1,4 +1,4 @@
-.h {
+h {
 
 }
 .h1, h1 {
@@ -21,37 +21,31 @@
     line-height: 1.5;
     color: #5c6366;
 }
-
 .paragraph, p {
     font: 14px 'Roboto';
     line-height: 1.71;
     color: #232e33;
 }
-
-.caption {
-    font: 12px 'Roboto';
-    line-height: 1.67;
-    color: #5c6266;
-}
-
 a, .link {
     font: 14px 'Roboto';
     line-height: 1.71;
     color: #4da6ff;
     text-decoration: none;
 }
-
 a:hover, .link:hover, .link_hover {
     color: #4595e6;
     text-decoration: underline;
 }
-
 .error {
     font: 12px 'Roboto';
     line-height: 1.67;
     color: #de4537;
 }
-
+.caption {
+    font: 12px 'Roboto';
+    line-height: 1.67;
+    color: #5c6266;
+}
 .hint {
     font: 14px 'Roboto';
     line-height: 1.71;

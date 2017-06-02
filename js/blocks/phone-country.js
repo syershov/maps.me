@@ -1,11 +1,10 @@
-$(document).ready(function(){
-
+var phoneCountryInit = function() {
     $.getJSON("js/data/phone-codes.json", function( data ) {
-
         var phone_number_0 = $("#phone_number_0"),
             phone_number_1 = $("#phone_number_1");
 
         var regexp_string,
+            body = $('body'),
             phone_country = $('.phone-country'),
             default_county = phone_country.data('cc'),
             county_input = $('.country-mask'),
@@ -50,7 +49,6 @@ $(document).ready(function(){
             }
         };
 
-
         var flags = $('.flags'),
             list = flags.find('.flags__list'),
             rows = '';
@@ -75,7 +73,6 @@ $(document).ready(function(){
                         + '</div>'
                     + '</div>'
         });
-
         list.html(rows);
 
         flags.on('click', '.flags__current', function(e){
@@ -109,9 +106,7 @@ $(document).ready(function(){
                 }
             });
         });
-
-        county_input
-            .on('keydown', function(e){
+        body.on('keydown', '.country-mask', function(e){
                 var _this = $(this),
                     val = _this.val();
 
@@ -127,9 +122,6 @@ $(document).ready(function(){
 
                 flags.removeClass('flags_open');
             });
-
-
         $('.flags__item[data-cc="' + default_county + '"]').click();
     });
-
-});
+};
