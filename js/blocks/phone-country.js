@@ -1,5 +1,5 @@
 var phoneCountryInit = function() {
-    $.getJSON("/maps.me/js/data/phone-codes.json", function( data ) {
+    $.getJSON(path_to_phone_codes, function( data ) {
         var phone_number_0 = $("#phone_number_0"),
             phone_number_1 = $("#phone_number_1");
 
@@ -62,7 +62,7 @@ var phoneCountryInit = function() {
             rows +=  '<div class="flags__item" data-cc="' + v.cc + '">'
                         + '<div class="country-row">'
                             + '<div class="country-row__img">'
-                                + '<img src="/maps.me/img/blank.gif" class="flag flag-' + v.cc.toString().toLowerCase() + '"/>'
+                                + '<img src="' + path_to_blank_gif + '" class="flag flag-' + v.cc.toString().toLowerCase() + '"/>'
                             + '</div>'
                             + '<div class="country-row__name">'
                                 + v.name_en
