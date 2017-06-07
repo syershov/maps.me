@@ -1,0 +1,98 @@
+.phone-country {
+    border-radius: 8px;
+    background-color: #ffffff;
+    border: solid 1px #e7edf0;
+    padding: 4px 12px;
+    position: relative;
+}
+
+.phone-country__select {
+    width: 40px;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+}
+.phone-country__input {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.phone-country__input input {
+    outline: 0;
+    font: 14px 'Roboto';
+    line-height: 1.72;
+    color: #232e33;
+    border: 1px solid transparent;
+    box-shadow: none;
+}
+
+.phone-country__input input[disabled],
+.phone-country__input input[disabled="disabled"] {
+    background-color: #f5f9fa;
+    color: #b8c6cc;
+}
+
+.phone-country__icon {
+    float: right;
+    padding-top: 7px;
+}
+
+.phone-country__cloud {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    background-color: #ffffff;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.40);
+    padding: 10px 16px;
+    font: 12px 'Roboto';
+    line-height: 1.67;
+    color: #de4537;
+    z-index: 9;
+    border-radius: 8px;
+    display: none;
+}
+
+.phone-country__cloud-arrow {
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 7px solid #fff;
+    position: absolute;
+    bottom: -7px;
+    left: 50%;
+    margin-left: -8px;
+}
+
+/* focus */
+.phone-country_focus {
+    border: solid 1px #b8c6cc;
+}
+
+/* disabled */
+.phone-country_disabled {
+    border: solid 1px #e7edf0;
+    background-color: #f5f9fa;
+}
+
+.phone-country_disabled .phone-country__select {
+    opacity: 0.4;
+    pointer-events: none;
+    cursor: default;
+}
+
+/* error */
+.phone-country_error {
+    border: solid 1px #f34b3c;
+    background-color: #fff8f8;
+}
+
+.phone-country_error input {
+    background-color: #fff8f8;
+}
+
+.phone-country_error .icon {
+    background: url('../../img/ic_error.svg') no-repeat center center!important;
+}
+
+.phone-country_error .phone-country__cloud {
+    display: block;
+}

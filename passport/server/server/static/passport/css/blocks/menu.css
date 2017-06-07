@@ -1,0 +1,14 @@
+.menu__item {
+    font: 14px 'Roboto';
+    color: #5c6266;
+    margin: 0 20px;
+    text-decoration: none;
+}
+
+.menu__item select {
+    font: 500 13px 'Roboto';
+}
+
+.menu__item:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% load i18n %}
+
+{% block title %}{% trans 'Social auth' %}{% endblock %}
+
+{% block additional_css %}
+    <!-- other -->
+    <link rel="stylesheet" href="{% static 'passport/css/other/typography/h/h2.css' %}">
+    <link rel="stylesheet" href="{% static 'passport/css/other/typography/a.css' %}">
+    <!-- blocks -->
+    <link rel="stylesheet" href="{% static 'passport/css/blocks/button/button.css' %}">
+    <link rel="stylesheet" href="{% static 'passport/css/blocks/button/button_with_icon.css' %}">
+    <link rel="stylesheet" href="{% static 'passport/css/blocks/button/button_facebook.css' %}">
+    <link rel="stylesheet" href="{% static 'passport/css/blocks/tile.css' %}">
+    <link rel="stylesheet" href="{% static 'passport/css/blocks/icon.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="tile tile_page_phone">
+    <div class="h h2 mb20">Sing In</div>
+
+    <a href="{% url 'social:begin' 'facebook' %}?next={{ next|urlencode }}" class="button button_with_icon button_full button_facebook">
+        <i class="icon icon_24 icon_facebook"></i> Facebook
+    </a>
+
+    <a href="{% url 'social:begin' 'google-oauth2' %}?next={{ next|urlencode }}" class="button button_with_icon button_full mt20">
+
+        <i class="icon icon_24 icon_google"></i> Google
+    </a>
+
+    <a href="{% url 'social:begin' 'openstreetmap' %}?next={{ next|urlencode }}" class="button button_with_icon button_full mt20">
+        <i class="icon icon_24 icon_osm"></i> OpenStreetMap
+    </a>
+</div>
+{% endblock %}
+
+
+{% block additional_js %}
+    <script src="{% static 'passport/js/vendor/jquery.documentReady.js' %}"></script>
+    <script src="{% static 'passport/js/other/utils.js' %}"></script>
+    <script src="{% static 'passport/js/blocks/mobile-menu.js' %}"></script>
+    <script src="{% static 'passport/js/pages/passport-sign-in.js' %}"></script>
+{% endblock %}
+

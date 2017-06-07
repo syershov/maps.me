@@ -1,0 +1,30 @@
+.country-row {
+    width: 100%;
+}
+
+.country-row__img {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 3px;
+}
+
+.country-row__name {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 3px;
+    margin-left: 8px;
+    color: #232e33;
+    max-width: 65%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.country-row__code {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 8px;
+    font: 14px 'Roboto';
+    line-height: 1.71;
+    color: #b8c6cc;
+}

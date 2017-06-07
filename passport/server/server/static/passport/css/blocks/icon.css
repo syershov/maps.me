@@ -1,0 +1,48 @@
+.icon {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* icon 16 */
+.icon_16 {
+    width: 16px;
+    height: 16px;
+}
+.icon_check_empty {
+    background: url('../../img/ic_check_empty.svg') no-repeat center center;
+}
+.icon_check_full {
+    background: url('../../img/ic_check_full.svg') no-repeat center center;
+}
+.icon_error {
+    background: url('../../img/ic_error.svg') no-repeat center center;
+}
+
+/* icon 20 */
+.icon_24 {
+    width: 24px;
+    height: 24px;
+}
+.icon_facebook {
+    background: url('../../img/ic_facebook_logo.svg') no-repeat center center;
+}
+.icon_google {
+    background: url('../../img/ic_google_logo.svg') no-repeat center center;
+}
+.icon_osm {
+    background: url('../../img/ic_osm.png') no-repeat center center;
+}
+.icon_menu {
+    background: url('../../img/ic_menu.svg') no-repeat center center;
+}
+.icon_close {
+    background: url('../../img/ic_close.svg') no-repeat center center;
+}
+
+/* retina */
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+    .icon_osm {
+        background: url('../../img/ic_osm@2x.png') no-repeat center center;
+        background-size: 24px 24px;
+    }
+}

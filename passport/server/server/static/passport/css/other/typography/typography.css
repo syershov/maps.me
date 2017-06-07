@@ -1,0 +1,11 @@
+.caption, .error {
+    font: 12px 'Roboto';
+    line-height: 1.67;
+}
+.caption {  color: #5c6266;  }
+.error {  color: #de4537;  }
+.hint {
+    font: 14px 'Roboto';
+    line-height: 1.71;
+    color: #b8c6cc;
+}

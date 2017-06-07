@@ -1,0 +1,103 @@
+.field-text {
+    background-color: #ffffff;
+    border: solid 1px #e7edf0;
+    border-radius: 8px;
+    padding: 0 12px;
+    position: relative;
+}
+
+/* elems */
+.field-text_focus {
+    border-color: #b8c6cc;
+}
+
+.field-text__input-wrap {
+    display: inline-block;
+    vertical-align: top;
+    width: 90%;
+}
+
+.field-text__icon {
+    width: 16px;
+    height: 38px;
+    float: right;
+    background: url('../../img/ic_check_empty.svg') no-repeat center center;
+}
+
+.field-text__input {
+    outline: 0;
+    font: 14px 'Roboto';
+    line-height: 1.72;
+    color: #232e33;
+    border: 1px solid transparent;
+    box-shadow: none;
+    border-radius: 8px;
+    height: 38px;
+    width: 100%;
+}
+.field-text__input::-webkit-input-placeholder   { color: #b8c6cc; }
+.field-text__input::-moz-placeholder            {  color: #b8c6cc;  }
+.field-text__input:-ms-input-placeholder        {  color: #b8c6cc;  }
+.field-text__input:-moz-placeholder             {  color: #b8c6cc;  }
+
+.field-text__cloud {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    background-color: #ffffff;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.40);
+    padding: 10px 16px;
+    font: 12px 'Roboto';
+    line-height: 1.67;
+    color: #de4537;
+    z-index: 9;
+    border-radius: 8px;
+    display: none;
+}
+
+.field-text__cloud-arrow {
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 7px solid #fff;
+    position: absolute;
+    bottom: -7px;
+    left: 50%;
+    margin-left: -8px;
+}
+
+/* success */
+.field-text_success .field-text__icon {
+    background: url('../../img/ic_check_full.svg') no-repeat center center;
+}
+
+/* error */
+.field-text_error {
+    border: 1px solid #f34b3c;
+    background: #fff8f8;
+}
+
+.field-text_error .field-text__input {
+    background: #fff8f8;
+}
+
+.field-text_error .field-text__icon {
+    background: url('../../img/ic_error.svg') no-repeat center center;
+}
+
+.field-text_error .field-text__cloud {
+    display: block;
+}
+
+/* disable */
+.field-text_disabled {
+    border: solid 1px #e7edf0;
+    background-color: #f5f9fa;
+}
+.field-text_disabled input,
+.field-text_disabled input[disabled],
+.field-text_disabled input[disabled="disabled"] {
+    background-color: #f5f9fa;
+    color: #b8c6cc;
+    pointer-events: none;
+    cursor: default;
+}

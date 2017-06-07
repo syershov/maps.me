@@ -1,0 +1,28 @@
+/* blue button */
+.button_blue {
+    background-color: #4da6ff;
+    border: none;
+    color: #ffffff;
+    padding: 12px 10px;
+}
+
+.button_blue:hover,
+.button_blue.button_hover {
+    background-color: #73b9ff;
+    color: #ffffff;
+}
+
+.button_blue:focus,
+.button_blue.button_focus {
+    background-color: #4595e6;
+}
+
+.button_blue[disabled],
+.button_blue[disabled="disabled"],
+.button_blue.button_disabled {
+    opacity: 0.4;
+    background-color: #4da6ff!important;
+    cursor: default;
+    pointer-events: none;
+}
+/* blue button */

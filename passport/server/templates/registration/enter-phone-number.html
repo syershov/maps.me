@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% load i18n %}
+
+{% block title %}{% trans 'Enter phone number' %}{% endblock %}
+
+{% block additional_css %}
+    <!-- other -->
+    <link rel="stylesheet" href="{% static 'passport/css/other/typography/typography_total.css' %}">
+    <!-- vendor -->
+    <link rel="stylesheet" href="{% static 'passport/css/vendor/flags.min.css' %}">
+    <!-- blocks -->
+    <link rel="stylesheet" href="{% static 'passport/css/blocks/button/button.css' %}">
+    <link rel="stylesheet" href="{% static 'passport/css/blocks/button/button_blue.css' %}">
+    <link rel="stylesheet" href="{% static 'passport/css/blocks/flags.css' %}">
+    <link rel="stylesheet" href="{% static 'passport/css/blocks/country-row.css' %}">
+    <link rel="stylesheet" href="{% static 'passport/css/blocks/phone-country.css' %}">
+    <link rel="stylesheet" href="{% static 'passport/css/blocks/icon.css' %}">
+    <link rel="stylesheet" href="{% static 'passport/css/blocks/tile.css' %}">
+{% endblock %}
+
+{% block content %}
+
+
+    <form method="post" class="tile tile_page_phone">
+        {% csrf_token %}
+
+        <div class="h h2 mb20">{% trans 'Please, enter your mobile phone number' %}</div>
+        <div class="paragraph">{% trans 'We will send a verification code to your phone number' %}</div>
+
+        <!--
+            error:
+                add class 'phone-country_error'
+            disabled:
+                add class 'phone-country_disabled' and 'disabled' prop to input
+        -->
+
+        <div class="phone-country mt10 {% if form.errors %}phone-country_error{% endif %}" data-cc="RU">
+            <div class="phone-country__cloud">
+                {% if form.errors %}
+                {% trans form.errors.phone_number.0 %}
+                {% endif %}
+                <div class="phone-country__cloud-arrow"></div>
+            </div>
+            <div class="phone-country__select">
+                <div class="flags">
+                    <div class="flags__current">
+                        <img src="{% static 'passport/img/blank.gif' %}" class=""/>
+                        <div class="flags__arrow"></div>
+                    </div>
+                    <div class="flags__list-wrapper">
+                        <div class="flags__list">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="phone-country__input">
+                <input type="tel" class="country-mask">
+            </div>
+
+            <div class="phone-country__icon">
+                <i class="icon icon_16 icon_check_empty"></i>
+            </div>
+        </div>
+
+        <button type="submit" class="button button_submit button_full button_blue mt40" disabled="disabled">{% trans 'Send code' %}</button>
+
+
+        {% url 'privacy_policy' as the_url %}
+        {% with 'class="link-text" href='|add:the_url as link %}
+        <p class="mt30">{% blocktrans %}By signing up, I accept <a {{ link }}>the Privacy Policy</a>{% endblocktrans %}</p>
+        {% endwith %}
+
+        <input type="hidden" id="id_phone_number_0" name="phone_number_0">
+        <input type="hidden" id="id_phone_number_1" name="phone_number_1">
+    </form>
+{% endblock %}
+
+
+{% block additional_js %}
+    <!-- vendor -->
+    <script src="{% static 'passport/js/vendor/zepto.min.js' %}"></script>
+    <script src="{% static 'passport/js/vendor/jquery.mask.min.js' %}"></script>
+    <!-- other -->
+    <script src="{% static 'passport/js/other/utils.js' %}"></script>
+    <!-- blocks -->
+    <script>
+	    var path_to_phone_codes = "{% static 'passport/js/data/phone-codes.json' %}"
+	    var path_to_blank_gif = "{% static 'passport/img/blank.gif' %}"
+	</script>
+    <script src="{% static 'passport/js/blocks/phone-country.js' %}"></script>
+    <script src="{% static 'passport/js/blocks/mobile-menu.js' %}"></script>
+    <!-- page -->
+    <script src="{% static 'passport/js/pages/passport-phone.js' %}"></script>
+{% endblock %}

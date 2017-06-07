@@ -1,0 +1,42 @@
+/* default button*/
+.button {
+    border-radius: 8px;
+    background-color: #ffffff;
+    border: solid 1px #a1adb3;
+    padding: 11px 10px;
+    display: inline-block;
+    vertical-align: top;
+    font: bold 14px 'Roboto';
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #a1adb3;
+    text-transform: uppercase;
+}
+
+.button:hover,
+.button_hover {
+    background-color: #f5f9fa;
+    color: #a1adb3;
+    text-decoration: none;
+}
+
+.button:focus,
+.button_focus {
+    background-color: #e7edf0;
+}
+
+.button[disabled],
+.button[disabled="disabled"],
+.button_disabled {
+    opacity: 0.4;
+    background-color: #ffffff!important;
+    cursor: default;
+    pointer-events: none;
+}
+/* default button */
+
+/* modifiers */
+.button_full {
+    width: 100%;
+}
+/* modifiers */
