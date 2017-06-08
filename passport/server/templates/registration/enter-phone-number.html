@@ -21,20 +21,18 @@
 {% endblock %}
 
 {% block content %}
-
-
     <form method="post" class="tile tile_page_phone">
         {% csrf_token %}
 
         <div class="h h2 mb20">{% trans 'Please, enter your mobile phone number' %}</div>
         <div class="paragraph">{% trans 'We will send a verification code to your phone number' %}</div>
 
-        <!--
+        {% comment "Help note" %}
             error:
                 add class 'phone-country_error'
             disabled:
                 add class 'phone-country_disabled' and 'disabled' prop to input
-        -->
+        {% endcomment %}
 
         <div class="phone-country mt10 {% if form.errors %}phone-country_error{% endif %}" data-cc="RU">
             <div class="phone-country__cloud">

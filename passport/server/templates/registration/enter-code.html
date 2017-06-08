@@ -24,14 +24,14 @@
         <div class="h h2 mb20">{% trans 'Please, enter the code' %}</div>
         <div class="paragraph">{% blocktrans with ph_number=form.initial.phone_number.as_international %}We sent a verification code to your phone number <span>{{ ph_number }}</span>{% endblocktrans %}</div>
 
-        <!--
+        {% comment "Help note" %}
             success:
                 add class 'field-text_success'
             error:
                 add class 'field-text_error'
             disabled:
                 add class 'field-text_disabled' and 'disabled' prop to input
-        -->
+        {% endcomment %}
 
         <div class="field-text field-text_with_icon mt10 {% if form.errors %}field-text_error{% endif %}">
             <div class="field-text__cloud">
